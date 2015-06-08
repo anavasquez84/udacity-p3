@@ -3,7 +3,7 @@ var Enemy = function(x,y){
     this.x = x;
     this.y = y;
     this.sprite = 'images/enemy-bug.png';
-}
+};
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -15,7 +15,7 @@ Enemy.prototype.update = function(dt){
     //ENEMY POSITION
     this.x = this.x + Math.floor(Math.random() * 400) * dt;
     if(this.x > 500){
-        this.x= -100
+        this.x= -100;
     }
     //RESET  ON COLLISION
      if(player.x >= this.x - 20 && player.x <= this.x + 20){
@@ -23,12 +23,12 @@ Enemy.prototype.update = function(dt){
             player.reset();
         }
     }
-}
+};
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function(){
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 // Now write your own player class
 // This class requires an update(), render() and
@@ -37,7 +37,7 @@ var Player = function(x,y){
     this.x = x;
     this.y = y;
     this.boy = 'images/char-boy.png';
-}
+};
 
 Player.prototype.handleInput = function(move){
     if(move === 'right' && this.x < 400){
@@ -49,22 +49,22 @@ Player.prototype.handleInput = function(move){
         } else if(move === 'down' && this.y < 400){
             this.y = this.y + 82;
     }
-}
+};
 
 Player.prototype.reset = function(){
         this.x=200;
         this.y=400;
-}
+};
 
 Player.prototype.update = function(dt){
     if(this.y === -10){
         this.reset();
     }
-}
+};
 
 Player.prototype.render = function(){
     ctx.drawImage(Resources.get(this.boy), this.x, this.y);
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
