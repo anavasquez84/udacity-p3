@@ -5,7 +5,7 @@ P3 for Udaciy's Front-End Nanodegree
 This project is a clone of the classic arcade game Frogger and involves the movement and population of player and enemy characters.  This game was created using Object-Oriented JavaScript and HTML5 Canvas.
 
 #####To Play
--Click [here] to start the game!(https://cdn.rawgit.com/anavasquez84/udacity-p3/master/index.html) 
+-Click [here](https://cdn.rawgit.com/anavasquez84/udacity-p3/master/index.html)  to start the game!
 
 #####Instructions
 -Help the little guy avoid the bugs by getting to the water!
