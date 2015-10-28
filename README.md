@@ -9,5 +9,7 @@ This project is a clone of the classic arcade game Frogger and involves the move
 
 #####Instructions
 -Help the little guy avoid the bugs by getting to the water!
+
 -*Movement*:Use your arrow keys to move your character up, down, left, and right. 
+
 -*Warning*:Watch out for the bugs, they will send you back to the beginning!
